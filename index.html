@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>elmsln-loading demos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="./node_modules/@webcomponents/webcomponentsjs/webcomponents-sd-ce.js"></script>
+
+  <!-- Use `npm run serve` to start a development server. -->
+
+  <style>
+    body {
+      background-color: #eee;
+      padding: 24px;
+    }
+
+    elmsln-loading {
+      margin: 8px;
+    }
+
+    elmsln-loading.blue {
+      --elmsln-loading-background-color: #03A9F4;
+    }
+  </style>
+</head>
+<body>
+  <elmsln-loading></elmsln-loading>
+
+  <elmsln-loading color="Pickle" size="Pickle"></elmsln-loading>
+
+  <elmsln-loading>Slot content</elmsln-loading>
+
+  <elmsln-loading class="blue"></elmsln-loading>
+
+  <script>
+    /** Set complex properties */
+    // document.querySelector('elmsln-loading').foo = ['bar'];
+  </script>
+
+  <!-- In development `elmsln-loading.bundled.js` will automatically be loaded. -->
+</body>
+</html>
